@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: #f8f9fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.profile-placeholder {
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 400px;
+}
+
+.profile-icon {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.profile-info {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.info-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.info-field .empty {
+  color: #aaa;
+}
+
+.under-construction p {
+  font-size: 1.4rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #ffb703, #fb8500);
+  color: #fff;
+  padding: 12px 25px;
+  border-radius: 10px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+  .profile-placeholder {
+    padding: 30px 20px;
+  }
+
+  .profile-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+  }
+}
+
+/* Big attention-grabbing button */
+.btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #ffb703, #fb8500);
+  color: #fff;
+  padding: 18px 40px;       /* bigger padding */
+  font-size: 1.2rem;        /* larger font */
+  border-radius: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2); /* bigger shadow for more impact */
+}
+

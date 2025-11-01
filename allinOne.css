@@ -1,0 +1,318 @@
+/* ---------------- Reset & Base ---------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #f8f9fb;
+  color: #222;
+  line-height: 1.6;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---------------- Navbar ---------------- */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 8%;
+  background-color: #111;
+  color: white;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.navbar nav a {
+  color: #ccc;
+  margin-left: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+  color: #ffb703;
+}
+
+/* ---------------- Hero Section ---------------- */
+.hero {
+  background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+  color: white;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.hero h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+}
+
+.hero p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+/* ---------------- Buttons ---------------- */
+.btn {
+  background-color: #ffb703;
+  color: #111;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-weight: 600;
+  text-decoration: none;
+  display: inline-block;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #ffa41b;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0,0,0,0.2);
+}
+
+/* ---------------- Product Section ---------------- */
+.product-section {
+  padding: 60px 8%;
+  text-align: center;
+}
+
+.section-title {
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+.product-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.product-card h3 {
+  font-size: 1.1rem;
+  margin-bottom: 5px;
+}
+
+.product-card p {
+  margin-bottom: 10px;
+  color: #555;
+}
+
+/* ---------------- Footer ---------------- */
+footer {
+  background-color: #111;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  margin-top: 40px;
+}
+
+/* ---------------- Profile Page ---------------- */
+.profile-placeholder {
+  background-color: #fff;
+  padding: 40px 50px;
+  border-radius: 15px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  text-align: center;
+  max-width: 400px;
+  margin: 40px auto;
+}
+
+.profile-icon {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.profile-info {
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.info-field {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  color: #333;
+}
+
+.info-field .empty {
+  color: #aaa;
+}
+
+.under-construction p {
+  font-size: 1.2rem;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* ---------------- Cart Placeholder ---------------- */
+.cart-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 50px 20px;
+}
+
+.under-construction-cart {
+  background: white;
+  border-radius: 16px;
+  padding: 50px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+  max-width: 600px;
+  animation: fadeIn 1.2s ease;
+}
+
+.under-construction-cart img {
+  width: 120px;
+  animation: float 3s ease-in-out infinite;
+}
+
+.under-construction-cart h2 {
+  margin-top: 20px;
+  color: #0d6efd;
+}
+
+.under-construction-cart p {
+  color: #555;
+  margin: 15px 0 25px;
+}
+
+#visitPageBtn {
+  background: #0d6efd;
+  color: white;
+  border: none;
+  padding: 14px 30px;
+  border-radius: 10px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+#visitPageBtn:hover {
+  background: #084298;
+  transform: scale(1.05);
+}
+
+/* ---------------- Login Page ---------------- */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+  padding: 40px 20px;
+}
+
+.login-box, .signup-box {
+  background: white;
+  padding: 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  width: 320px;
+  text-align: center;
+}
+
+input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 0.9rem;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #ffb703;
+  border: none;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ffa41b;
+}
+
+.note {
+  font-size: 0.85rem;
+  margin-top: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+/* ---------------- Animations ---------------- */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ---------------- Scroll Smooth ---------------- */
+html {
+  scroll-behavior: smooth;
+}
+
+/* ---------------- Responsive ---------------- */
+@media (max-width: 1024px) {
+  .hero h2 { font-size: 1.9rem; }
+  .navbar nav a { margin-left: 15px; }
+}
+
+@media (max-width: 768px) {
+  .hero h2 { font-size: 1.6rem; }
+  .product-grid { gap: 15px; }
+  .navbar nav a { margin-left: 10px; }
+  .profile-placeholder { padding: 35px 30px; max-width: 90%; }
+  .profile-icon { font-size: 50px; margin-bottom: 25px; }
+}
+
+@media (max-width: 480px) {
+  .hero h2 { font-size: 1.4rem; }
+  .profile-placeholder { padding: 30px 20px; }
+  .profile-icon { font-size: 45px; margin-bottom: 20px; }
+  .info-field { flex-direction: column; align-items: flex-start; gap: 5px; }
+  .btn, #visitPageBtn, button { width: 100%; font-size: 1.1rem; padding: 16px 0; }
+  .product-card img { height: auto; }
+}

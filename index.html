@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SnapbuyBD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="navbar">
+  <h1 class="logo">🛍️ SNAPBUY</h1>
+  <nav>
+    <ul id="navLinks" style="list-style: none; display: flex; gap: 20px; margin: 0; padding: 0;">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li id="loginItem"><a href="login.html" id="loginLink">Login</a></li>
+      <li id="profileItem" style="display:none;"><a href="profile.html" id="profileLink">Profile</a></li>
+      <li id="logoutItem" style="display:none;"><a href="#" id="logoutLink" onclick="logoutUser()">Logout</a></li>
+    </ul>
+  </nav>
+</header>
+
+
+  <section class="hero">
+    <div class="hero-text">
+      <h2>Find Your Perfect Keychain</h2>
+      <p>Exclusive superhero collections now available at unbeatable prices!</p>
+      <a href="#products" class="btn">Shop Now</a>
+    </div>
+  </section>
+
+  <section id="products" class="product-section">
+    <h2 class="section-title">Our Keychains</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="product_img/golden.jpeg" alt="Golden Batman Keychain">
+        <h3>Golden Batman Keychain</h3>
+        <p>160 Tk</p>
+        <a href="https://www.facebook.com/share/p/1Czak6QBSX/" class="btn">View Details</a>
+      </div>
+
+      <div class="product-card">
+        <img src="product_img/black.jpeg" alt="Black Btman Keychain">
+        <h3>Black Batman Keychain</h3>
+        <p>180 Tk</p>
+        <a href="https://www.facebook.com/share/p/1Czak6QBSX/" class="btn">View Details</a>
+      </div>
+
+      <div class="product-card">
+        <img src="product_img/silver.jpeg" alt="Silver Batman Keychain">
+        <h3>Silver Batman Keychain</h3>
+        <p>180 Tk</p>
+        <a href="https://www.facebook.com/share/p/1Czak6QBSX/" class="btn">View Details</a>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 SnapBuy. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="main.js"></script>
+
+</body>
+</html>
